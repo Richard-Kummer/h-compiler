@@ -20,7 +20,7 @@ HELLO WORLD PROGRAM - Compiled H (prints "Hello World!")
 :
 <29
 :
-<6
+<7
 ::
 <3
 :
