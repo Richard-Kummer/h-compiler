@@ -24,13 +24,13 @@ public class HCompiler {
         StringBuilder compiled = new StringBuilder();
 
         final HashMap<String, Character> commands = new HashMap<>();
-        commands.put("HhHhh", ';');
-        commands.put("HhHhH", '>');
-        commands.put("HH", '-');
-        commands.put("Hhhh", '<');
-        commands.put("HhhH", '^');
-        commands.put("HhHHh", ':');
-        commands.put("HhHHH", '?');
+        commands.put("HhHhh", ';'); //section marker
+        commands.put("HhHhH", '>'); //goto
+        commands.put("HH", '-'); //negate
+        commands.put("Hhhh", '<'); //add value
+        commands.put("HhhH", '^'); //pointer
+        commands.put("HhHHh", ':'); //output
+        commands.put("HhHHH", '?'); //input
 
         int intBuffer = 1;
         boolean parsingInt = false;

@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Enter the path to file");
         Path fileName = Path.of(input.nextLine());
 
-        HVM hvm = new HVM(new HCompiler(Files.readString(fileName)));
+        HVM hvm = new HVM(new HCompiler(Files.readString(fileName)), 4096, input);
         hvm.run();
     }
 }
